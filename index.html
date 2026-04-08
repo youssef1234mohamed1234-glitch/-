@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتب المحامي الاحترافي</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#0f172a;color:#fff}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#020617;position:sticky;top:0;z-index:1000}
+header h1{color:#22c55e;font-size:18px}
+
+nav{display:flex;gap:10px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-size:14px}
+
+.hero{height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h2{font-size:26px;margin-bottom:15px}
+.hero p{font-size:14px}
+
+.btn{background:#22c55e;padding:12px 20px;border:none;border-radius:10px;color:#fff;font-size:14px;cursor:pointer}
+
+section{padding:40px 15px}
+.container{max-width:1000px;margin:auto}
+
+.cards{display:grid;grid-template-columns:1fr;gap:15px}
+.card{background:#1e293b;padding:15px;border-radius:15px;text-align:center}
+
+form input,form textarea{width:100%;padding:10px;margin:8px 0;border:none;border-radius:10px;font-size:14px}
+
+footer{text-align:center;padding:15px;background:#020617;font-size:14px}
+
+.whatsapp-fixed{position:fixed;bottom:15px;left:15px;background:#25d366;padding:12px;border-radius:50%;font-size:18px;text-decoration:none;color:#fff}
+
+/* تحسين للموبايل */
+@media(min-width:768px){
+.hero h2{font-size:40px}
+.cards{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(min-width:1024px){
+.cards{grid-template-columns:repeat(3,1fr)}
+header{padding:20px 50px}
+nav a{font-size:16px}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>⚖️ المحامي</h1>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#about">عنّا</a>
+<a href="#services">الخدمات</a>
+<a href="#booking">احجز</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h2>خبرة قانونية تثق بها</h2>
+<p>أفضل الحلول القانونية بأعلى احترافية</p><br>
+<a href="#booking"><button class="btn">احجز الآن</button></a>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2>من نحن</h2>
+<p>مكتب محاماة يقدم خدمات قانونية متكاملة بخبرة كبيرة.</p>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2>الخدمات</h2><br>
+<div class="cards">
+<div class="card">قضايا مدنية</div>
+<div class="card">قضايا جنائية</div>
+<div class="card">قضايا أسرية</div>
+<div class="card">صياغة عقود</div>
+<div class="card">استشارات قانونية</div>
+<div class="card">قضايا شركات</div>
+</div>
+</div>
+</section>
+
+<section id="booking">
+<div class="container">
+<h2>احجز الآن</h2>
+<form id="form">
+<input type="text" id="name" placeholder="الاسم" required>
+<input type="text" id="phone" placeholder="رقم الهاتف" required>
+<textarea id="msg" placeholder="اكتب مشكلتك"></textarea>
+<button class="btn">إرسال عبر واتساب</button>
+</form>
+</div>
+</section>
+
+<footer>
+<p>📞 01120400934</p>
+<p>© جميع الحقوق محفوظة</p>
+</foo
